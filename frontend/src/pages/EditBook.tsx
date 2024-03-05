@@ -27,7 +27,6 @@ const EditBook: React.FC = () => {
     axios
       .get(PATH)
       .then((response) => {
-        console.log(response);
         if (response.data === null) {
           // Navigate to 404 page
           navigate("*");
