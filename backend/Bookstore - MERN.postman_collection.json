@@ -1,0 +1,183 @@
+{
+  "info": {
+    "_postman_id": "c6d7eb2a-ad45-4e05-99c2-2c430163b7a0",
+    "name": "Bookstore - MERN",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "176795"
+  },
+  "item": [
+    {
+      "name": "Add book",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"some title\",\n    \"author\": \"some author\",\n    \"publishYear\": 123654\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5555/books",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["books"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get books",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"some title\",\n    \"author\": \"some author\",\n    \"publishYear\": 123654\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5555/books",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["books"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get single book",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"some title\",\n    \"author\": \"some author\",\n    \"publishYear\": 123654\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5555/books",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["books"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete single book",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"some title\",\n    \"author\": \"some author\",\n    \"publishYear\": 123654\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5555/books/65e08a003c9f7a905618fbaa",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["books", "65e08a003c9f7a905618fbaa"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update a single book",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"some title\",\n    \"author\": \"some author\",\n    \"publishYear\": 123654\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5555/books",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["books"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

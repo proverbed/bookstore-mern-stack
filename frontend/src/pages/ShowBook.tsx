@@ -29,8 +29,13 @@ const ShowBook: React.FC = () => {
     axios
       .get(PATH)
       .then((response) => {
-        setBook(response.data);
-        setLoading(false);
+        if (response.data === null) {
+          // Navigate to 404 page
+          navigate("*");
+        } else {
+          setBook(response.data);
+          setLoading(false);
+        }
       })
       .catch((error) => {
         console.log(error);

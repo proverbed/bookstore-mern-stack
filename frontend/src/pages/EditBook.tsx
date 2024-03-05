@@ -15,9 +15,15 @@ const EditBook: React.FC = () => {
     axios
       .get(PATH)
       .then((response) => {
-        setTitle(response.data.title);
-        setAuthor(response.data.author);
-        setPublishYear(response.data.publishYear);
+        console.log(response);
+        if (response.data === null) {
+          // Navigate to 404 page
+          navigate("*");
+        } else {
+          setTitle(response.data.title);
+          setAuthor(response.data.author);
+          setPublishYear(response.data.publishYear);
+        }
       })
       .catch((error) => {
         alert("An error occurred");
